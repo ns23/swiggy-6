@@ -1,0 +1,21 @@
+{
+  "name": "Swiggy Super 6",
+  "description": "Notify When a six is hit",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "background",
+    "tts",
+    "webNavigation",
+    "notifications",
+    "https://m.cricbuzz.com/match-api/livematches.json"
+  ],
+  "browser_action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
